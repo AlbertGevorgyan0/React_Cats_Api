@@ -6,8 +6,73 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+html,body{
+  min-width:100%;
+  min-height: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root{
+  min-width:100%;
+  min-height:100%; 
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  align-content: center;
+}
+.main div{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.main div div{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  align-items: center;
+  overflow: hidden;
+  padding-top:50px;
+}
+.main img{
+  width:300px;
+  height:300px;
+}
+.main label{
+  margin:10px;
+  border: 2px solid;
+  font-size: 3vw;
+  padding: 10px 30px;
+  border-radius: 10px;
+} 
+
+.main select{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+.more_btn{
+  font-size: 1.5vw;
+  background-color: transparent;
+  border: none;
+  padding:3px 20px;
+  display: none;
+  margin:20px;
+}
+.more_btn:hover{
+  background-color: gray;
+  color:white;
+  transition: 1s;
 }
