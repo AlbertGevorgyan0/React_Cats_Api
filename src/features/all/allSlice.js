@@ -7,7 +7,6 @@ export function allReducer(state={},action) {
                     ...state.categories,
                     action.payload.newCategories
                 ]
-                // categories:action.payload.newCategories.categories
             }
 
         case 'cat-add':
@@ -17,17 +16,6 @@ export function allReducer(state={},action) {
             newArr[index].cats.push(action.payload.newCat.cats)
             return{
                 ...state
-                // ...newArr
-
-
-
-
-                    
-                    // state.categories.find(id=>id==category_id).cats:[]
-                    // cats:[
-                    //     ...state.categories.cats,
-                    // ]
-                
             }
 
         default:

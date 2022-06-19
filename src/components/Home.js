@@ -58,7 +58,6 @@ export const Home = () => {
     }
 
     const MoreCats = () => {
-        // setLimit(limit + 10)
         let category_id = cats[0].categories[0].id
         axios.get(`https://api.thecatapi.com/v1/images/search?limit=`+limit+`&page=1&category_ids=` + category_id)
         .then(res => {
@@ -69,7 +68,6 @@ export const Home = () => {
             }))   
         })
     }
-    // console.log(state)
     return(
         <div className="main">
             <label htmlFor="categories">Choose a Category</label>

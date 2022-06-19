@@ -8,10 +8,6 @@ const store = createStore(combineReducers({
         categories:[
             
         ],
-        // cats:[
-            
-        // ]
     }
-    
 },applyMiddleware(thunk));
 export default store
